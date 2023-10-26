@@ -1,0 +1,787 @@
+.carrossel{
+    width: 70%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#c2cec0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #3d3c3c;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .logo {
+    width: 10%;
+    /* margin-left: 38%; */
+  }
+
+  .mgleft {
+    margin-left: 33%;
+  }
+
+  .fundo {
+    background-color: #DCEADA;
+  }
+
+  .letra {
+    color:#bac0b9;
+  }
+  body{
+    background-color: #535653;
+  }
+ .carrosel{
+  width: 50%;
+ }
+ .video{
+  margin-left: 15%;
+ 
+
+ }
+ .letras{
+  margin-left: -31%;
+  
+ }
+ .menu2{
+    margin-top: 2%;
+ }
+
+ .bodyL {
+  margin: 0;
+  padding: 0;
+  background-image: url('../img/movieposter.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #fdf9f9;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-container h1 {
+  font-size: 24px;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-container input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-container button {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tamanhoIMG {
+  height: 170px;
+  width: 250px;;
+
+}
+
+/* contato*/
+.bodyC {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form h2 {
+  font-size: 24px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #EFD8D8;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.logo {
+  width: 10%;
+  /* margin-left: 38%; */
+}
+
+.mgleft {
+  margin-left: 33%;
+}
+
+.fundo {
+  background-color: #DCEADA;
+}
+
+.letra {
+  color: black;
+}
+body{
+  background-color: #f2e4e4;
+}
+
+@media (max-width: 990px) {
+  .mgleft {
+    margin-left: 0;
+  }
+
+  .navbar-collapse {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .collapse img {
+    width: 34%;
+  }
+}
+
+body{
+  background-color: #dac8bc;
+  }
+  
+  a{
+      text-decoration: none;
+      color: white;
+  }
+  .bot{
+   justify-content: flex-end;
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    }
+    
+    .campo {
+    margin-bottom: 20px;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    
+    input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    }
+    
+    .TITLE{
+    
+    text-align: center;
+    font-size: xx-large;
+    margin-left: 2%;
+  }  
+    .submit{
+      background-color: #f3f6f2;
+      color: #ccc;
+      text-align: center;
+      width: 106%;
+    }
+  
+  
+  
+  
+
+footer {
+  background-color: #EFD8D8;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 15.5%;
+}
+@media (max-widht:600px) {
+  .footer{
+      margin-top: 90%;
+     
+  }
+}
+
+
+  @media (max-width: 990px) {
+    .mgleft {
+      margin-left: 0;
+    }
+
+    .navbar-collapse {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .collapse img {
+      width: 34%;
+    }
+
+  }
+
+  
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../image/fundo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'PT Sans', sans-serif;
+  line-height: 100%;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #201e1f;
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  color: #ad00ff;
+}
+
+p {
+  color: #181414;
+}
+
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  color: #c4004f;
+}
+
+.conteudo-flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+/* -------------- CONTEUDO PRINCIPAL -------------- */
+.conteudo-principal {
+  width: 76%;
+  min-width: 320px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-filter: none;
+  z-index: 1;
+}
+
+.conteudo-principal img:hover {
+  transition: .3s;
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
+}
+
+.primeiro-h1 {
+  padding-top: 130px;
+  padding-bottom: 3%;
+  font-size: 1vmax;
+  text-align: center;
+}
+
+.elementos {
+  width: auto;
+  text-align: left;
+  background: rgb(255, 249, 249);
+  margin-bottom: 4%;
+  padding: 10px 0;
+}
+
+.elementos img {
+  width: 100%;
+}
+
+/* -------------- CONTEUDO INDEX -------------- */
+.dados-empresa {
+  height: auto;
+  margin-bottom: 4%;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.30);
+  border-top: 2px solid #c4004f;
+  border-bottom: 2px solid #c4004f;
+  font-size: 1vmax;
+}
+
+.caixa-vantagens div {
+  min-width: 40%;
+  height: auto;
+  margin: 2%;
+  border: 1px solid #4b4b4b;
+  text-align: left;
+}
+
+.dados-empresa h1{
+  margin: 2%;
+}
+
+.dados-empresa h2{
+  margin: 1%;
+}
+
+.dados-empresa p {
+  margin: 2%;
+}
+
+/* -------------- BANNERS -------------- */
+.banner {
+  width: 45%;
+  min-width: 310px;
+  height: auto;
+  margin: 20px;
+  text-align: center;
+}
+
+/* -------------- CONTEUDO SERIES / FILMES -------------- */
+.capa {
+  width: 30%;
+  min-width: 310px;
+  height: auto;
+  margin: 20px;
+}
+
+.capa img {
+  width: 100%;
+}
+
+.segundo-h1{
+  margin-bottom: 4%;
+  font-size: 1vmax;
+}
+
+/* -------------- PAGINA INDIVIDUAL / CATEGORIAS -------------- */
+.poster-play {
+  width: 15%;
+  min-width: 105px;
+  height: auto;
+  margin: 2%;
+  text-align: center;
+}
+
+.poster-play h2{
+  margin: 0;
+  padding-bottom: 1%;
+  font-size: 1vmax;
+  text-align: left;
+}
+
+#btn-assistir {
+  width: 100%;
+  height: 2.5vmax;
+  font-size: 1vmax;
+  background-color: #c4004f;
+  color: #fff;
+}
+
+#btn-assistir span {
+  padding-right: 5%;
+  font-size: 1vmax;
+}
+
+.info-play {
+  width: 75%;
+  margin: 2% 4%;
+  margin-left: 2%;
+}
+
+.info-play-ano {
+  padding-top: 1%;
+  font-size: 0.8vmax;
+  color: #707070;
+}
+
+.info-play h2 {
+  margin: 0 0.5%;
+  padding: 0;
+  font-size: 1.5vmax;
+}
+
+.info-play p {
+  padding-bottom: 1%;
+  margin: 0.5%;
+  font-size: 1vmax;
+}
+
+.info-play em {
+  font-family: 'Cabin', sans-serif;
+  font-style: normal;
+  color: #707070;
+}
+
+.info-play a {
+  font-weight: 0;
+}
+
+.fotos {
+  margin: 2%;
+}
+
+.video {
+  width: 40%;
+  min-width: 310px;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.embed-vid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.embed-vid iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.categorias h1 {
+  font-size: 1.5vmax;
+  text-align: left;
+  margin-bottom: 1%;
+  padding: 0;
+}
+
+/* -------------- CONTATO -------------- */
+.form-mapa{
+  margin: 2%;
+  width: 100%;
+  min-width: 310px;
+}
+
+.formulario{
+  width: 40%;
+  margin: 5%;
+}
+
+@media (max-width: 1082px) {
+  .formulario{
+    width: 310px;
+  }
+}
+
+.form-contato{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.icone-contato {
+  width: 10%;
+  height: 3vmax;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #fff;
+  font-size: 1.5vmax;
+  color: #fff;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.dados-user{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.dados-user fieldset{
+  width: 90%;
+}
+
+.form-contato div,
+.form-contato fieldset{
+ margin-top: 1%;
+}
+
+.dados-msg fieldset{
+  width: 100%;
+}
+
+.form-contato input,
+.form-contato textarea,
+.form-contato select {
+  font-family: 'Lato', sans-serif;
+  font-size: 1vmax;
+  width: 100%;
+  height: 3vmax;
+  color: #585858;
+  background: #fff;
+  padding: 1% 1%;
+  border: 1px solid #fff;
+  max-height: 60px;
+}
+
+.form-contato textarea {
+  width: 100%;
+  height: 8vmax;
+  max-height: 200px;
+  resize: none;
+  padding: 1% 2%;
+}
+
+.form-contato select,
+.form-contato button {
+  width: 100%;
+  height: 3vmax;
+  max-width: 620px;
+  max-height: 60px;
+}
+
+.form-contato button {
+  background: #c4004f;
+  color: #fff;
+}
+
+.form-contato input:focus,
+.form-contato select:focus,
+.form-contato textarea:focus {
+  outline-color: #c4004f;
+}
+
+.rede-social {
+  width: 100%;
+  margin: 2%;
+  font-size: 2vmax;
+  text-align: center;
+}
+
+.rede-social div{
+  margin: 1%;
+}
+
+.mapa {
+  width: 40%;
+  min-width: 310px;
+  margin: 5%;
+}
+
+.embed-mapa {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%;
+}
+
+.embed-mapa iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.formularioContato { 
+
+    max-width:600px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    background:#fff; 
+    box-shadow: 1px 0px 1.2px 0px #ccc; 
+    position:relative; 
+}
+
+.formularioContato:before { 
+
+    width:0; 
+    height:0; 
+    border:15px solid transparent; 
+    border-bottom-color:#fff; 
+    content:""; 
+    position:absolute; 
+    left:6%; 
+    top:-4.5%; 
+    margin-top:-4px; 
+    margin-left:6px; 
+    z-index:2;
+
+}
+
+.formularioContato label  { 
+
+    float:left; 
+    width:100%; 
+    margin-bottom:1.2em; 
+
+}
+
+.formularioContato label span {
+
+    width: 100%;
+    float: left;
+    color: #999;
+    margin-bottom: 6px;
+    font-family:'open_sansregular'; 
+
+}
+
+.formularioContato label input  { 
+
+    font-size:1em; 
+    color:#555; 
+    font-family:'open_sansregular'; 
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label select { 
+
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none; 
+    transition: 0.3s;  
+
+}
+
+.formularioContato label textarea { 
+
+    font-size:1em; 
+    color:#555; 
+    border:1px #dee5ed solid; 
+    border-radius:4px; 
+    padding:0.6em; 
+    outline:none;
+    transition: 0.3s;   
+
+}
+
+.formularioContato label input:focus    { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+.formularioContato label select:focus   { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; }
+.formularioContato label textarea:focus { box-shadow:0 0 5px 0px rgb(178,216,231); border:1px rgb(37,174,230) solid; color:rgb(37,174,230);}
+
+.formularioContato button.btn-envia { 
+
+    background-color:#adb5ac; 
+    width:100%; display:block; 
+    margin:auto; cursor:pointer; 
+    border-radius:4px;  
+    border:0; 
+    padding:0.8em 0em; 
+    color:#fff; 
+    font-size:1.3em; 
+    font-family:'open_sansbold'; 
+    text-align: center;
+    transition: 0.3s;   
+
+}
+
+.formularioContato button.btn-envia:hover { 
+
+    background-color:#333; 
+
+}
+.circulo{
+  width: 100px;
+height: 100px;
+border-radius: 50%;
+background-color: red;
+margin: 50px;
+}

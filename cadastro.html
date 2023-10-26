@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Filmov - Contato</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../image/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../image/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../image/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../image/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+  
+</head>
+<body>
+    <style>
+        .container_form {
+
+width: 700px;
+margin: auto;
+display: flex;
+flex-direction: column;
+background:#ffffff; 
+box-shadow: 1px 0px 1.2px 0px #e3e3e3; 
+border-radius:3px; 
+padding:1em;
+
+}
+
+.container_form h1 {
+
+font-family:'open_sansregular';
+font-size: 2.3em;
+color: #d4af96;
+border-bottom: 1px #f0eded solid;
+margin-bottom: 10px;
+padding-bottom: 10px;
+
+}
+
+.form_grupo {
+width: 90%;
+margin: 0 auto;
+margin-bottom: 30px;
+position: relative;
+}
+
+.form_grupo .legenda { 
+
+width: 100%;
+float: left;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+}
+
+/* SUBMIT */
+
+.submit { width:100%; float:left; }
+
+.submit_btn {
+
+float: left;
+display: block;
+padding: 5px 30px;
+border: none;
+outline: none;
+background-color: #896ffb;
+color: #fff;
+text-shadow: 0 0 5px rgb(0, 0, 0);
+font-family: inherit;
+font-size: 25px;
+font-family:'open_sansregular';
+border-radius: 6px;
+margin: 20px auto;
+cursor: pointer;
+transition: all 0.3s;
+margin-left: 39%;
+}
+
+.submit_btn:hover {
+
+background-color: #444444;
+transform: scale(1.03);
+
+}
+
+.dropdown {
+display: block;
+margin: 0 auto;
+font-size: 16px;
+font-family: inherit;
+color: #222222;
+border-radius: 4px;
+border: 1px #f2f2f2 solid;
+background: #fdfdfd;
+outline: none;
+padding-left: 10px;
+width: 100%;
+}
+
+.form_new_input {
+display: none;
+}
+
+.radio_label,
+.check_label {
+
+float: left;
+width: 100%;
+padding-left: 30px;
+cursor: pointer;
+margin-bottom: 8px;
+
+}
+
+
+.radio_new_btn {
+
+position: absolute;
+left: 0;
+transform: translateY(3px);
+height: 20px;
+width: 20px;
+border-radius: 50%;
+border: 0.2em solid #4c4c4c;
+
+}
+
+.radio_new_btn::after {
+
+content: "";
+position: absolute;
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color: #6fcffb;
+visibility: hidden;
+
+}
+
+.check_new_btn {
+
+position: absolute;
+left: 0;
+height: 20px;
+width: 20px;
+border: 0.2em solid #4c4c4c;
+
+}
+
+.check_new_btn::after {
+
+content: "";
+height: 8px;
+width: 8px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: #6fcffb;
+visibility: hidden;
+
+}
+
+.form_new_input:checked ~ .radio_label .radio_new_btn::after,
+.form_new_input:checked ~ .check_label .check_new_btn::after {
+
+visibility: visible;
+}
+
+.form_new_input:checked ~ .radio_label,
+.form_new_input:checked ~ .check_label {
+color: #6fcffb;
+}
+
+
+.form_grupo {
+
+width: 100%;
+margin-bottom: 20px;
+position: relative;
+
+}
+
+.form_input {
+
+font-size: 16px;
+font-family: inherit;
+padding: 8px 15px;
+border-radius: 4px;
+border: 1px #f2f2f2 solid;
+background: #fdfdfd;
+outline: none;
+width: 100%;
+transition: all 0.3s;
+
+}
+
+.form_message,
+.form_message .message_input {
+
+width: 100%;
+float:left;
+
+}
+
+.form_message_label {
+
+width: 100%;
+float: left;
+margin-top: 15px;
+margin-bottom: 15px;
+font-weight: bold;
+
+}
+    </style>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-0 p-0">
+  <div class="container-fluid  fundo">
+
+      <span class="menu2" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNav">
+          <ul class="navbar-nav mgleft">
+              <li class="nav-item">
+                  <a class="nav-link active $font-" aria-current="page"
+                      href="INICIO.html">INÍCIO</a>
+                      
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link letra" href="PAGE1.html">Séries </a>
+
+              </li>
+             <a class="nav-link active $font-" aria-current="page"
+                      href="cadastro.html">Cadastro</a>
+          </ul>
+
+          <img class="logo" src="IMG/LOGO.png" href="#">
+
+          <ul class="navbar-nav">
+
+              <li class="nav-item">
+                  <a class="nav-link letra" href="login.html">Login</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link " href="top10.html">Top 10</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link " href="contato.html">Contato</a>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="PAGE1.html">TERROR</a>
+  <a href="filmes1.html">ROMANCE</a>
+  <a href="paginafilmes.html">DESENHOS </a>
+  <a href="02-filme.html">AVENTURA</a>
+  <a href="filmes1.html">FILMES</a>
+ 
+</div>
+  <div class="conteudo-principal">
+
+    <div class="primeiro-h1">
+      <h1>Venha ser uma moviebuffers</h1>
+    </div>
+    <div class="container_form">
+
+        <h1>Formulário de Cadastro</h1>
+
+        <form class="form" action="#" method="post">
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="e-mail" class="form_label">Email</label>
+                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="datanascimento" class="form_label">Data de Nascimento</label>
+                <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+            </div>        
+
+            <div class="form_grupo">
+                
+                <label for="estadocivil" class="text">Estado civil</label>
+                <select name="estadocivil" class="dropdown" required>
+                    
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="Solteiro" class="form_select_option">Solteiro(a)</option>
+                    <option value="Casado" class="form_select_option">Casado(a) </option>
+                    <option value="Divorciado" class="form_select_option">Divorciado(a)</option>                    
+                    <option value="Viúvo" class="form_select_option">Viúvo(a)</option>                    
+                
+                </select>
+
+            </div>
+
+            <div class="form_grupo">
+
+                <span class="legenda">Sexo:</span>
+                
+                <div class="radio-btn">
+                    <input type="radio" class="form_new_input" id="masculino" name="sexo" value="Masculino" required="required">
+                    <label for="masculino" class="radio_label form_label"> <span class="radio_new_btn"></span> Masculino</label>
+                </div>
+
+                <div class="radio-btn">
+                    <input type="radio" class="form_new_input" id="feminino" name="sexo" value="Feminino" required="required">
+                    <label for="feminino" class="radio_label form_label"> <span class="radio_new_btn"></span> Feminino</label>
+                </div>
+
+            </div>
+          
+
+            <div class="form_grupo">
+
+                <span class="legenda">Você quer assistir o que?</span>
+
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="html5" name="aprender" value="html5">
+                    <label for="html5" class="form_label check_label"> <span class="check_new_btn"></span> terror</label>
+                </div>
+
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="css3" name="aprender" value="css3">
+                    <label for="css3" class="form_label check_label"><span class="check_new_btn"></span> comédia</label>
+                </div>
+
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="jquery" name="aprender" value="jquery">
+                    <label for="jquery" class="form_label check_label"><span class="check_new_btn"></span> filmes</label>
+                </div>
+
+                <div class="check-btn">
+                    <input type="checkbox" class="form_new_input" id="wordpress" name="aprender" value="wordpress">
+                    <label for="wordpress" class="form_label check_label"><span class="check_new_btn"></span> séries</label>
+                </div>
+                
+
+                <div class="form_message">
+                    
+                    <label for="message" class="form_message_label"> Digite aqui se quiser um conteúdo específico:</label>
+                    <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+
+                </div>
+
+                <div class="submit">
+
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+                
+                </div>
+        </form>
+
+</div>
+  </div>
+  <footer class="text-center text-lg-start bg-light text-muted" style="width: 133%; margin-left: -16%;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+     
+      <div class="me-5 d-none d-lg-block">
+        <span class="frase">Sua felicidade é muito importante para nós</span>
+      </div>
+   
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Movie Buff
+            </h6>
+            <p>
+              Aqui temos os melhores filmes para você e as pessoas que você ama.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+             Filmes
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Ação</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Aventura</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Comédia</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">24 horas disponíveis</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Médico
+            </h6>
+            <p>
+              <a href="#!" class="text-reset">Gerais</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Dramas</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Nacional</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Internacional</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> Brasil, BR 10012, SP</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              moviebuff@example.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+      <script src="java.js"></script>
+</body>
+</html>

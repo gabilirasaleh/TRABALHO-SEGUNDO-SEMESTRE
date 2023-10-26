@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Filmov - Contato</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="../image/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../image/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../image/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../image/favicons/site.webmanifest">
+  <link rel="mask-icon" href="../image/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light mt-0 p-0">
+                <div class="container-fluid  fundo">
+
+                    <span class="menu2" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse " id="navbarNav">
+                        <ul class="navbar-nav mgleft">
+                            <li class="nav-item">
+                                <a class="nav-link active $font-" aria-current="page"
+                                    href="filmes1.html">Filmes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link letra" href="PAGE1.html">Séries </a>
+
+                            </li>
+                           <a class="nav-link active $font-" aria-current="page"
+                                    href="cadastro.html">Cadastro</a>
+                        </ul>
+
+                        <img class="logo" src="IMG/LOGO.png" href="#">
+
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item">
+                                <a class="nav-link letra" href="login.html">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="top10.html">Top 10</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="TESTE.html">Contato</a>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="PAGE1.html">TERROR</a>
+              <a href="filmes1.html">ROMANCE</a>
+              <a href="TESTE.html">COMÉDIA</a>
+              <a href="02-filme.html">AVENTURA</a>
+          </div>
+  <div class="conteudo-principal">
+
+    <div class="primeiro-h1">
+      <h1>Fale com a gente!</h1>
+    </div>
+
+    <!-- início elemento -->
+
+    <div class="elementos conteudo-flex">
+
+      <div class="form-mapa conteudo-flex">
+
+        <!-- inínicio formulário -->
+        <div class="formulario">
+          <form class="form-contato" method="post">
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="far fa-user"></span>
+              </div>
+              <fieldset>
+                  <input type="text" id="nome" placeholder="Nome" class="user" required autofocus>
+              </fieldset>
+            </div>
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="far fa-envelope"></span>
+              </div>
+              <fieldset>
+                  <input type="email" id="email" placeholder="Email" class="email" required>
+              </fieldset>
+            </div>
+
+            <div class="dados-user">
+              <div class="icone-contato conteudo-flex">
+                <span class="fas fa-phone-alt"></span>
+              </div>
+              <fieldset>
+                <input type="tel" id="telefone" placeholder="Telefone" class="telefone" required>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <select name="assunto" id="assunto" required>
+                  <option select selected disabled>Selecione o assunto</option>
+                  <option value="0">Dúvidas</option>
+                  <option value="1">Sugestões</option>
+                  <option value="2">Reclamações</option>
+                  <option value="3">Financeiro</option>
+                  <option value="4">Suporte</option>
+                  <option value="5">Ouvidoria</option>
+                  <option value="6">Outras informações</option>
+                </select>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <textarea id="mensagem" placeholder="Mensagem" required></textarea>
+              </fieldset>
+            </div>
+
+            <div class="dados-msg">
+              <fieldset>
+                <button type="submit" id="botao" title="Enviar">Enviar</button>
+              </fieldset>
+            </div>
+
+          </form>
+        </div>
+        <!-- fim formulário -->
+
+        <!-- início mapa -->
+        <div class="mapa">
+          <div class="embed-mapa">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.84302934144!2d-46.625640385022!3d-23.574080484676525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce597ac07fc4db%3A0x2082237196d0d781!2sAv.%20Lins%20de%20Vasconcelos%2C%201222%20-%20Cambuci%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001538-001!5e0!3m2!1spt-BR!2sbr!4v1587329886866!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+          </div>
+        </div>
+        <!-- fim mapa -->
+
+      </div>
+
+      <!--início redes sociais -->
+      <div class="rede-social conteudo-flex">
+        <div>
+          <a href="#"><span class="fab fa-facebook rede-social" alt="ícone do facebook"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-instagram rede-social" alt="ícone do instagram"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-twitter rede-social" alt="ícone do twitter"></span></a>
+        </div>
+        <div>
+          <a href="#"><span class="fab fa-youtube rede-social" alt="ícone do youtube"></span></a>
+        </div>
+      </div>
+      <!-- fim redes sociais -->
+
+
+
+    </div>
+    <!-- fim elemento -->
+
+  </div>
+  <!-- fim conteúdo principal -->
+  <br><br>
+
+
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+   
+    <div class="me-5 d-none d-lg-block">
+      <span class="frase">Sua felicidade é muito importante para nós</span>
+    </div>
+ 
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Movie Buff
+          </h6>
+          <p>
+            Aqui temos os melhores filmes para você e as pessoas que você ama.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+           Filmes
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Ação</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Aventura</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Comédia</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">24 horas disponíveis</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Médico
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Gerais</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dramas</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Nacional</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Internacional</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Brasil, BR 10012, SP</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            moviebuff@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/"></a>
+  </div>
+  <!-- Copyright -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    <script src="java.js"></script>
+</body>
+</html>
